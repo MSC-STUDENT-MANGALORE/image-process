@@ -1,5 +1,5 @@
 # image-process
-pip install opencv_python<br><br>
+pip install opencv_python<br>
 pip install matplotlib<br>
 
 PROGRAM 1<br>
