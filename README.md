@@ -25,7 +25,7 @@ img.show()<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-PROGRAm 4<br><br>
+PROGRAm 4<br>
 from PIL import ImageColor<br>
 img1=ImageColor.getrgb("red")<br>
 print(img1)<br>
