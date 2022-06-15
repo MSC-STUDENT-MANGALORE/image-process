@@ -18,7 +18,7 @@ OUTPUT:<br>
 ![image](https://user-images.githubusercontent.com/98145365/173806136-56fc3fac-33a2-49f4-8ec1-c53624b88ff7.png)<br><br>
 
 PROGRAm 3<br>
-from PIL import Image<br><br>
+from PIL import Image<br>
 img=Image.open("butterflypic.jpg")<br>
 img=img.rotate(180)<br>
 img.show()<br>
