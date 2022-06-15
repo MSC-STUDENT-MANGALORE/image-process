@@ -74,5 +74,5 @@ Filename: butterflypic.jpg<br>
 Format: JPEG<br><br>
 Mode: RGB<br>
 Size: (1024, 535)<br>
-Width: 1024<br><br>
-Height: 535<br><br>
+Width: 1024<br>
+Height: 535<br>
