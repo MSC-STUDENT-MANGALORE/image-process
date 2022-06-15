@@ -11,7 +11,7 @@ cv2.destroyAllWindows()<br>
 
 PROGRAM 2<br><br>
 import matplotlib.image as mping<br>
-import matplotlib.pyplot as plt<br><br>
+import matplotlib.pyplot as plt<br>
 img=mping.imread('butterflypic.jpg')<br>
 plt.imshow(img)<br>
 OUTPUT:<br>
