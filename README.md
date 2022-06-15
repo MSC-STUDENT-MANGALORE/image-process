@@ -1,6 +1,5 @@
 # image-process
 pip install opencv_python<br><br>
-
 pip install matplotlib<br>
 
 PROGRAM 1<br>
@@ -9,7 +8,6 @@ img=cv2.imread('butterflypic.jpg',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br><br><br>
-
 
 PROGRAM 2<br><br>
 import matplotlib.image as mping<br><br>
@@ -54,7 +52,7 @@ plt.show()<br><br>
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br><br>
 plt.show()<br><br>
 
-OUTPUT:<br><br>
+OUTPUT:<br><
 ![image](https://user-images.githubusercontent.com/98145365/173806612-0b953b0c-7ab6-4915-9f73-8dfecb25e4fa.png)<br><br>
 
 
@@ -66,7 +64,7 @@ print("Format:",image.format)<br>
 print("Mode:",image.mode)<br>
 print("Size:",image.size)<br>
 print("Width:",image.width)<br>
-print("Height:",image.height)<br><br><br>
+print("Height:",image.height)<br>
 image.close()<br>
 
 OUTPUT:<br><br><br>
