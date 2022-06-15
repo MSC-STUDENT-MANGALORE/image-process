@@ -71,7 +71,7 @@ image.close()<br>
 
 OUTPUT:<br>
 Filename: butterflypic.jpg<br>
-Format: JPEG<br><br>
+Format: JPEG<br>
 Mode: RGB<br>
 Size: (1024, 535)<br>
 Width: 1024<br>
