@@ -9,7 +9,7 @@ cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
-PROGRAM 2<br><br>
+PROGRAM 2<br>
 import matplotlib.image as mping<br>
 import matplotlib.pyplot as plt<br>
 img=mping.imread('butterflypic.jpg')<br>
@@ -21,7 +21,7 @@ PROGRAm 3<br>
 from PIL import Image<br><br>
 img=Image.open("butterflypic.jpg")<br>
 img=img.rotate(180)<br>
-img.show()<br><br>
+img.show()<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 
