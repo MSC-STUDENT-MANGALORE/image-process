@@ -1,11 +1,11 @@
 # image-process
-PROGRAM &
-from PIL import Image
-image=Image.open('butterflypic.jpg')
-print("Filename:",image.filename)
-print("Format:",image.format)
-print("Mode:",image.mode)
-print("Size:",image.size)
-print("Width:",image.width)
-print("Height:",image.height)
-image.close()
+PROGRAM 7<br>
+from PIL import Image<br>
+image=Image.open('butterflypic.jpg')<br>
+print("Filename:",image.filename)<br>
+print("Format:",image.format)<br>
+print("Mode:",image.mode)<br>
+print("Size:",image.size)<br>
+print("Width:",image.width)<br>
+print("Height:",image.height)<br>
+image.close()<br>
