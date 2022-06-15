@@ -46,13 +46,17 @@ img=cv2.imread('butterflypic.jpg')<br>
 plt.imshow(img)<br>
 plt.show()<br>
 img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)<br>
+plt.imshow(img)
 plt.show()<br>
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)<br>
+plt.imshow(img)<br>
 plt.show()<br>
 
-OUTPUT:<br>
-![image](https://user-images.githubusercontent.com/98145365/173806612-0b953b0c-7ab6-4915-9f73-8dfecb25e4fa.png)<br>
 
+OUTPUT:<br>
+![image](https://user-images.githubusercontent.com/98145365/173813837-cd414d2d-dc09-4985-b41b-10c5607db435.png)
+![image](https://user-images.githubusercontent.com/98145365/173813887-14844208-6714-4025-9963-234528b779de.png)
+![image](https://user-images.githubusercontent.com/98145365/173813939-4d41a836-bd42-4044-92b7-e18e96b273fa.png)
 
 PROGRAM 7<br>
 from PIL import Image<br>
@@ -65,10 +69,10 @@ print("Width:",image.width)<br>
 print("Height:",image.height)<br>
 image.close()<br>
 
-OUTPUT:<br><br>
+OUTPUT:<br>
 Filename: butterflypic.jpg<br>
-Format: JPEG<br><br><br>
-Mode: RGB<br><br><br>
+Format: JPEG<br><br>
+Mode: RGB<br>
 Size: (1024, 535)<br>
 Width: 1024<br><br>
 Height: 535<br><br>
