@@ -77,30 +77,30 @@ Size: (1024, 535)<br>
 Width: 1024<br>
 Height: 535<br>
 
-program8
-import cv2 
-img=cv2.imread('butterflypic.jpg')
-print('originally image length width',img.shape) 
-cv2.imshow('original image',img) 
-cv2.waitKey(0) 
-imgresize=cv2.resize(img,(150,160))
-cv2.imshow('Resized image',imgresize)
-print('Resized image length width',imgresize.shape) 
-cv2.waitKey(0)
+program8<br>
+import cv2 <br>
+img=cv2.imread('butterflypic.jpg')<br>
+print('originally image length width',img.shape) <br>
+cv2.imshow('original image',img) <br>
+cv2.waitKey(0) <br>
+imgresize=cv2.resize(img,(150,160))<br>
+cv2.imshow('Resized image',imgresize)<br>
+print('Resized image length width',imgresize.shape) <br>
+cv2.waitKey(0)<br>
 
-output
-originally image length width (535, 1024, 3)
-Resized image length width (160, 150, 3)
+output<br>
+originally image length width (535, 1024, 3)<br>
+Resized image length width (160, 150, 3)<br>
 
-Program9:
-import cv2 
-img=cv2.imread('butterflypic.jpg') 
-cv2.imshow("RGB",img) 
-cv2.waitKey(0) 
-img=cv2.imread('butterflypic.jpg',0) 
-cv2.imshow("Gray",img) 
-cv2.waitKey(0) 
-ret, bw_img=cv2.threshold(img,127,100,cv2.THRESH_BINARY) 
-cv2.imshow("Binary",bw_img) 
-cv2.waitKey(0) 
-cv2.destroyAllWindows()
+Program9:<br>
+import cv2 <br>
+img=cv2.imread('butterflypic.jpg') <br>
+cv2.imshow("RGB",img) <br>
+cv2.waitKey(0) <br>
+img=cv2.imread('butterflypic.jpg',0) <br>
+cv2.imshow("Gray",img) <br>
+cv2.waitKey(0) <br>
+ret, bw_img=cv2.threshold(img,127,100,cv2.THRESH_BINARY) <br>
+cv2.imshow("Binary",bw_img) <br>
+cv2.waitKey(0) <br>
+cv2.destroyAllWindows()<br>
