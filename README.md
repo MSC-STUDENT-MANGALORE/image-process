@@ -156,6 +156,30 @@ plt.imshow(blur) <br>
 plt.show()<br>
 ![image](https://user-images.githubusercontent.com/98145365/175018117-85841ae3-fdde-4e6e-80c8-0252100112f0.png)<br>
 
+PROGRAM 12
+import cv2
+import matplotlib.image as mping
+import matplotlib.pyplot as plt
+img1=cv2.imread('img1.jpg')
+img2=cv2.imread('img2.jpg')
+fimg1=img1+img2 
+plt.imshow(fimg1)
+plt.show()
+fimg2=img1-img2
+plt.imshow(fimg2)
+plt.show()
+cv2.imwrite('output.jpg', fimg2)
+fimg3=img1*img2 
+plt.imshow(fimg3)
+plt.show()
+cv2.imwrite('output.jpg', fimg3)
+fimg4=img1/img2 
+plt.imshow(fimg4)
+plt.show()
+cv2.imwrite('output.jpg', fimg4)
+![image](https://user-images.githubusercontent.com/98145365/175023051-c4f5b5b7-2024-4987-aa4a-48a7b1c5804d.png)
+
+
 
 
 
