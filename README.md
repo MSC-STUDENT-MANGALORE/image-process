@@ -208,6 +208,21 @@ cv2.destroyAllWindows()<br>
 ![image](https://user-images.githubusercontent.com/98145365/175260889-abf9c5da-48c9-40a6-81d4-2eb8f6ca0b6a.png)
 
 
+import cv2 as c
+import numpy as np
+from PIL import Image
+array = np.zeros([100,200,3], dtype=np.uint8)
+array[:,:100]=[255,130,0]
+array[:,100:]=[0,0,255]
+img = Image.fromarray(array)
+img.save('igt.png')
+img.show()
+c.waitKey(0)
+
+![image](https://user-images.githubusercontent.com/98145365/175268353-8e64d798-6c50-427e-8ab9-cc4413d65f61.png)
+
+
+
 
 
 
