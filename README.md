@@ -14,6 +14,8 @@ img=cv2.imread('butterflypic.jpg',0)<br>
 cv2.imshow('image',img)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
+![image](https://user-images.githubusercontent.com/98145365/175269709-0fde0e91-765b-4178-aec1-302d09479c91.png)<br>
+
 
 PROGRAM 2<br>
 import matplotlib.image as mping<br>
@@ -30,6 +32,8 @@ img=img.rotate(180)<br>
 img.show()<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
+![image](https://user-images.githubusercontent.com/98145365/175269965-7636253b-89a6-4f13-aee2-289909bfcf76.png)<br>
+
 
 PROGRAm 4<br>
 from PIL import ImageColor<br>
@@ -42,6 +46,7 @@ PROGRAM 5<br>
 from PIL import ImageColor<br>
 img=Image.new('RGB',(200,400),(255,255,0))<br>
 img.show()<br>
+![image](https://user-images.githubusercontent.com/98145365/175270283-4d8bb0d5-5d4f-4ed9-993f-43f82da1e026.png)<br>
 
 
 PROGRAM 6<br>
@@ -95,6 +100,7 @@ print('Resized image length width',imgresize.shape) <br>
 cv2.waitKey(0)<br>
 
 output<br>
+![image](https://user-images.githubusercontent.com/98145365/175270728-792f1f5f-0fc4-446f-9f36-34023a67efbf.png)<br>
 originally image length width (535, 1024, 3)<br>
 Resized image length width (160, 150, 3)<br>
 
@@ -110,6 +116,13 @@ ret, bw_img=cv2.threshold(img,127,100,cv2.THRESH_BINARY) <br>
 cv2.imshow("Binary",bw_img) <br>
 cv2.waitKey(0) <br>
 cv2.destroyAllWindows()<br>
+![image](https://user-images.githubusercontent.com/98145365/175271317-2b4191cd-ff9f-493c-9848-710ae55ec387.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/175271546-170786f8-e04d-4594-96fd-1625ecfbeefc.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/175271657-b63c4b39-5328-46d9-ac92-253ef9a99bc7.png)<br>
+
+
+
+
 
 PROGRAM 11:<br>
 import cv2<br>
