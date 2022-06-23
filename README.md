@@ -1,7 +1,8 @@
 # image-process
+ http://localhost:8889/?token=bdb3f00276480d39583fcc6a387dd6108d48ff8fc9bbc0de<br>
 http://localhost:8888/notebooks/image%20processing%20jayaram/Untitled.ipynb<br>
 
-token/password bdb3f00276480d39583fcc6a387dd6108d48ff8fc9bbc0de
+token/password bdb3f00276480d39583fcc6a387dd6108d48ff8fc9bbc0de<br>
 pip install opencv_python<br>
 pip install matplotlib<br>
 
