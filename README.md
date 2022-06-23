@@ -182,6 +182,24 @@ cv2.imwrite('output.jpg', fimg4)
 ![image](https://user-images.githubusercontent.com/98145365/175023227-4a060f09-216c-4c0e-9247-7d242a5945ab.png)
 ![image](https://user-images.githubusercontent.com/98145365/175023292-a645d1a3-63d9-474e-97ed-c84389832059.png)
 
+PROGRAM 23/6/22
+import cv2 
+img = cv2.imread("D:\img1.jpg")
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB) 
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV) 
+cv2.imshow("GRAY image", gray)
+cv2.imshow("HSV image",hsv)
+cv2.imshow("LAB image",lab)
+cv2.imshow("HLS image", hls)
+cv2.imshow("YUV image",yuv)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+![image](https://user-images.githubusercontent.com/98145365/175260889-abf9c5da-48c9-40a6-81d4-2eb8f6ca0b6a.png)
+
+
 
 
 
