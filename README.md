@@ -278,6 +278,34 @@ cv2.destroyAllWindows()<br>
 
 
 
+from PIL import Image
+from PIL import ImageEnhance 
+image =Image.open('img2.jpg')
+image.show()
+enh_bri =ImageEnhance.Brightness(image)
+brightness= 1.5
+image_brightened= enh_bri.enhance(brightness)
+image_brightened.show()
+enh_col= ImageEnhance.Color(image)
+color= 1.5
+image_colored =enh_col.enhance(color)
+image_colored.show()
+enh_con =ImageEnhance.Contrast (image) 
+contrast = 1.5
+image_contrasted =enh_con.enhance(contrast)
+image_contrasted.show()
+enh_sha =ImageEnhance.Sharpness(image)
+sharpness =3.0
+image_sharped= enh_sha. enhance (sharpness)
+image_sharped.show()
+
+![image](https://user-images.githubusercontent.com/98145365/176407863-c45bce7b-7e32-4730-9cd1-93dac0628f88.png)
+![image](https://user-images.githubusercontent.com/98145365/176407931-53d481f2-151f-4343-8bd6-8e49401a4640.png)
+![image](https://user-images.githubusercontent.com/98145365/176408003-5a9b3ea6-5ddd-4276-8d84-a516205f79a5.png)
+![image](https://user-images.githubusercontent.com/98145365/176408163-5e702827-152d-4fc2-90d7-7d6ada59529b.png)
+![image](https://user-images.githubusercontent.com/98145365/176408262-5c24e4a6-a9dc-469c-8abc-a1a0ac0696fc.png)
+
+
 
 
 
