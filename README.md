@@ -234,32 +234,32 @@ c.waitKey(0)<br>
 
 ![image](https://user-images.githubusercontent.com/98145365/175268353-8e64d798-6c50-427e-8ab9-cc4413d65f61.png)<br>
 
-import cv2
-import matplotlib.pyplot as plt
-image1=cv2.imread('img1.jpg')
-image2=cv2.imread('img1.jpg')
-ax=plt.subplots(figsize=(15,10))
-bitwiseAnd= cv2.bitwise_and(image1, image2) 
-bitwiseor= cv2.bitwise_or(image1, image2)
-bitwiseXor=cv2.bitwise_xor (image1,image2) 
-bitwiseNot_img1= cv2.bitwise_not(image1)
-#bitwiseNot_img1= cv2.bitwise_not(image2)
-plt.subplot(151)
-plt.imshow(bitwiseAnd)
-plt.subplot(152)
-plt.imshow(bitwiseor)
-plt.subplot(153)
-plt.imshow(bitwiseXor)
-plt.subplot(154)
-plt.imshow(bitwiseNot_img1) 
-#plt.subplot(155)
-#plt.imshow(bitwiseNot_img2)
-cv2.waitKey(0)
-![image](https://user-images.githubusercontent.com/98145365/176402881-8696d728-b82e-4805-97fc-1b0a4f7a5fb2.png)
-![image](https://user-images.githubusercontent.com/98145365/176402937-eb270461-db0e-44e4-bccf-e39624a49b4b.png)
-![image](https://user-images.githubusercontent.com/98145365/176402982-ae6b5cbb-324c-4de8-a069-1f5730a9ad58.png)
-![image](https://user-images.githubusercontent.com/98145365/176403063-97ced2ab-0a20-4ccd-8efa-d97db116bed8.png)
-![image](https://user-images.githubusercontent.com/98145365/176403187-dd14fdac-1fb4-4757-bde7-5f1721908a75.png)
+import cv2<br>
+import matplotlib.pyplot as plt<br>
+image1=cv2.imread('img1.jpg')<br>
+image2=cv2.imread('img1.jpg')<br>
+ax=plt.subplots(figsize=(15,10))<br>
+bitwiseAnd= cv2.bitwise_and(image1, image2) <br>
+bitwiseor= cv2.bitwise_or(image1, image2)<br>
+bitwiseXor=cv2.bitwise_xor (image1,image2) <br>
+bitwiseNot_img1= cv2.bitwise_not(image1)<br>
+#bitwiseNot_img1= cv2.bitwise_not(image2)<br>
+plt.subplot(151)<br>
+plt.imshow(bitwiseAnd)<br>
+plt.subplot(152)<br>
+plt.imshow(bitwiseor)<br>
+plt.subplot(153)<br>
+plt.imshow(bitwiseXor)<br>
+plt.subplot(154)<br>
+plt.imshow(bitwiseNot_img1) <br>
+#plt.subplot(155)<br>
+#plt.imshow(bitwiseNot_img2)<br>
+cv2.waitKey(0)<br>
+![image](https://user-images.githubusercontent.com/98145365/176402881-8696d728-b82e-4805-97fc-1b0a4f7a5fb2.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176402937-eb270461-db0e-44e4-bccf-e39624a49b4b.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176402982-ae6b5cbb-324c-4de8-a069-1f5730a9ad58.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176403063-97ced2ab-0a20-4ccd-8efa-d97db116bed8.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176403187-dd14fdac-1fb4-4757-bde7-5f1721908a75.png)<br>
 
 
 
