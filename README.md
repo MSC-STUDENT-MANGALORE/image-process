@@ -257,23 +257,23 @@ plt.imshow(bitwiseNot_img1) <br>
 cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/98145365/176402881-8696d728-b82e-4805-97fc-1b0a4f7a5fb2.png)<br>
 
-import cv2
-import numpy as np
-image = cv2.imread('img1.jpg')
-cv2.imshow('Original Image', image)
-cv2.waitKey(0)
-Gaussian = cv2.GaussianBlur (image, (7, 7), 0)
-cv2.imshow('Gaussian Blurring', Gaussian)
-cv2.waitKey(0)
-median = cv2.medianBlur (image, 5) 
-cv2.imshow('Median Blurring', median)
-cv2.waitKey(0)
-bilateral = cv2.bilateralFilter(image, 9, 75, 75)
-cv2.imshow('Bilateral Blurring', bilateral)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-![image](https://user-images.githubusercontent.com/98145365/176405600-d5c9ed3c-9ac0-4788-bed3-e8b4ecf9f462.png)
-![image](https://user-images.githubusercontent.com/98145365/176405880-2d999d6f-bb31-4cd1-b437-8c450033c0be.png)
+import cv2<br>
+import numpy as np<br>
+image = cv2.imread('img1.jpg')<br>
+cv2.imshow('Original Image', image)<br>
+cv2.waitKey(0)<br>
+Gaussian = cv2.GaussianBlur (image, (7, 7), 0)<br>
+cv2.imshow('Gaussian Blurring', Gaussian)<br>
+cv2.waitKey(0)<br>
+median = cv2.medianBlur (image, 5) <br>
+cv2.imshow('Median Blurring', median)<br>
+cv2.waitKey(0)<br>
+bilateral = cv2.bilateralFilter(image, 9, 75, 75)<br>
+cv2.imshow('Bilateral Blurring', bilateral)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+![image](https://user-images.githubusercontent.com/98145365/176405600-d5c9ed3c-9ac0-4788-bed3-e8b4ecf9f462.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176405880-2d999d6f-bb31-4cd1-b437-8c450033c0be.png)<br>
 
 
 
