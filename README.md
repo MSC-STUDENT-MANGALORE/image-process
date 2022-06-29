@@ -272,38 +272,64 @@ bilateral = cv2.bilateralFilter(image, 9, 75, 75)<br>
 cv2.imshow('Bilateral Blurring', bilateral)<br>
 cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
-![image](https://user-images.githubusercontent.com/98145365/176405600-d5c9ed3c-9ac0-4788-bed3-e8b4ecf9f462.png)<br>
-![image](https://user-images.githubusercontent.com/98145365/176405880-2d999d6f-bb31-4cd1-b437-8c450033c0be.png)<br>
-![image](https://user-images.githubusercontent.com/98145365/176406410-671dbadf-8912-48dc-8565-aed6f081f9b0.png)
+![image](https://user-images.githubusercontent.com/98145365/176405600-d5c9ed3c-9ac0-4788-bed3-e8b4ecf9f462.png)<br><br>
+![image](https://user-images.githubusercontent.com/98145365/176405880-2d999d6f-bb31-4cd1-b437-8c450033c0be.png)<br><br>
+![image](https://user-images.githubusercontent.com/98145365/176406410-671dbadf-8912-48dc-8565-aed6f081f9b0.png)<br>
 
 
 
-from PIL import Image
-from PIL import ImageEnhance 
-image =Image.open('img2.jpg')
-image.show()
-enh_bri =ImageEnhance.Brightness(image)
-brightness= 1.5
-image_brightened= enh_bri.enhance(brightness)
-image_brightened.show()
-enh_col= ImageEnhance.Color(image)
-color= 1.5
-image_colored =enh_col.enhance(color)
-image_colored.show()
-enh_con =ImageEnhance.Contrast (image) 
-contrast = 1.5
-image_contrasted =enh_con.enhance(contrast)
-image_contrasted.show()
-enh_sha =ImageEnhance.Sharpness(image)
-sharpness =3.0
-image_sharped= enh_sha. enhance (sharpness)
-image_sharped.show()
+from PIL import Image<br>
+from PIL import ImageEnhance <br>
+image =Image.open('img2.jpg')<br>
+image.show()<br>
+enh_bri =ImageEnhance.Brightness(image)<br>
+brightness= 1.5<br>
+image_brightened= enh_bri.enhance(brightness)<br>
+image_brightened.show()<br>
+enh_col= ImageEnhance.Color(image)<br>
+color= 1.5<br>
+image_colored =enh_col.enhance(color)<br>
+image_colored.show()<br>
+enh_con =ImageEnhance.Contrast (image) <br>
+contrast = 1.5<br>
+image_contrasted =enh_con.enhance(contrast)<br>
+image_contrasted.show()<br>
+enh_sha =ImageEnhance.Sharpness(image)<br>
+sharpness =3.0<br>
+image_sharped= enh_sha. enhance (sharpness)<br>
+image_sharped.show()<br>
 
-![image](https://user-images.githubusercontent.com/98145365/176407863-c45bce7b-7e32-4730-9cd1-93dac0628f88.png)
-![image](https://user-images.githubusercontent.com/98145365/176407931-53d481f2-151f-4343-8bd6-8e49401a4640.png)
-![image](https://user-images.githubusercontent.com/98145365/176408003-5a9b3ea6-5ddd-4276-8d84-a516205f79a5.png)
-![image](https://user-images.githubusercontent.com/98145365/176408163-5e702827-152d-4fc2-90d7-7d6ada59529b.png)
-![image](https://user-images.githubusercontent.com/98145365/176408262-5c24e4a6-a9dc-469c-8abc-a1a0ac0696fc.png)
+![image](https://user-images.githubusercontent.com/98145365/176407863-c45bce7b-7e32-4730-9cd1-93dac0628f88.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176407931-53d481f2-151f-4343-8bd6-8e49401a4640.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176408003-5a9b3ea6-5ddd-4276-8d84-a516205f79a5.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176408163-5e702827-152d-4fc2-90d7-7d6ada59529b.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176408262-5c24e4a6-a9dc-469c-8abc-a1a0ac0696fc.png)<br>
+
+
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
+from PIL import Image, ImageEnhance<br>
+img= cv2.imread('img2.jpg',0)<br>
+ax=plt.subplots(figsize=(20,10))<br>
+kernel = np.ones((5,5), np. uint8)<br>
+opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel) <br>
+closing=cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)<br>
+erosion= cv2. erode (img, kernel, iterations = 1)<br>
+dilation=cv2.dilate (img, kernel, iterations = 1)<br>
+gradient= cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)<br>
+plt.subplot (151)<br>
+plt.imshow(opening)<br>
+plt.subplot (152)<br>
+plt.imshow(closing)<br>
+plt.subplot(153)<br>
+plt.imshow(erosion)<br>
+plt.subplot(154)<br>
+plt.imshow(dilation)<br>
+plt.subplot (155)<br>
+plt.imshow(gradient)<br>
+cv2.waitKey(0)<br>
+![image](https://user-images.githubusercontent.com/98145365/176412514-7a90ff71-acdd-4491-aec2-a8af6af238da.png)<br>
 
 
 
