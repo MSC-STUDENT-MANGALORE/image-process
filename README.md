@@ -382,6 +382,23 @@ if isSaved:<br>
 ![image](https://user-images.githubusercontent.com/98145365/178697014-e9071a0a-9159-448a-b740-ff1a25fcb4fa.png)<br>
 
 
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt <br>
+image=cv2.imread('img2.jpg',0)<br>
+x,y=image.shape<br>
+z=np.zeros((x,y))<br>
+for i in range(0,x):<br>
+ for j in range(0,y):<br>
+  if(image[i][j]>50 and image[i][j]<150): <br>
+    z[i][j]=255<br>
+  else:<br>
+    z[i][j]=image[i][j]<br>
+equ=np.hstack((image,z))<br>
+plt.title('Graylevel slicing with background')<br>
+plt.imshow(equ, 'gray')<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/98145365/178699466-2b261172-94c0-4766-abba-e8ed402aeea7.png)<br>
 
 
 
