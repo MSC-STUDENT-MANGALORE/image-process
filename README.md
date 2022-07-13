@@ -379,6 +379,10 @@ cv2.waitKey(0)<br>
 cv2.destroyAllWindows()<br>
 if isSaved:<br>
  print("The image is successfully saved")<br>
+ 
+ output
+ The image is successfully saved
+ 
 ![image](https://user-images.githubusercontent.com/98145365/178697014-e9071a0a-9159-448a-b740-ff1a25fcb4fa.png)<br>
 
 
