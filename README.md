@@ -331,40 +331,56 @@ plt.imshow(gradient)<br>
 cv2.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/98145365/176412514-7a90ff71-acdd-4491-aec2-a8af6af238da.png)<br>
 
-SAME AS PREVIOUS
-import cv2
-import numpy as np
-import matplotlib.image as mpimg
-from matplotlib import pyplot as plt
-from PIL import Image, ImageEnhance
-img= cv2.imread('img1.jpg',0)
-#ax=plt.subplots(figsize=(20,10))
-kernel = np.ones((5,5), np. uint8)
-opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel) 
-closing=cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
-erosion= cv2. erode (img, kernel, iterations = 1)
-dilation=cv2.dilate (img, kernel, iterations = 1)
-gradient= cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)
-cv2.imshow('opening',opening)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-cv2.imshow('c',closing)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-cv2.imshow('e',erosion)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-cv2.imshow('d',dilation)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-cv2.imshow('d',gradient)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-![image](https://user-images.githubusercontent.com/98145365/176417486-a7388e27-d82d-4b50-8cfe-e1215ea5070a.png)
-![image](https://user-images.githubusercontent.com/98145365/176417549-8d285116-5fe1-4129-bae1-2c763f44f3af.png)
-![image](https://user-images.githubusercontent.com/98145365/176417616-bc072bb9-7135-4123-b132-3ba0e8baea00.png)
-![image](https://user-images.githubusercontent.com/98145365/176417679-9f58beef-2d0b-4ed2-96f4-b4e70b1b7e09.png)
-![image](https://user-images.githubusercontent.com/98145365/176417772-d6f982d4-f8a4-4f61-ae0e-24e29556b3c4.png)
+SAME AS PREVIOUS<br>
+import cv2<br>
+import numpy as np<br>
+import matplotlib.image as mpimg<br>
+from matplotlib import pyplot as plt<br>
+from PIL import Image, ImageEnhance<br>
+img= cv2.imread('img1.jpg',0)<br>
+#ax=plt.subplots(figsize=(20,10))<br>
+kernel = np.ones((5,5), np. uint8)<br>
+opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel) <br>
+closing=cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)<br>
+erosion= cv2. erode (img, kernel, iterations = 1)<br>
+dilation=cv2.dilate (img, kernel, iterations = 1)<br>
+gradient= cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)<br>
+cv2.imshow('opening',opening)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+cv2.imshow('c',closing)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+cv2.imshow('e',erosion)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+cv2.imshow('d',dilation)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+cv2.imshow('d',gradient)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+![image](https://user-images.githubusercontent.com/98145365/176417486-a7388e27-d82d-4b50-8cfe-e1215ea5070a.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176417549-8d285116-5fe1-4129-bae1-2c763f44f3af.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176417616-bc072bb9-7135-4123-b132-3ba0e8baea00.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176417679-9f58beef-2d0b-4ed2-96f4-b4e70b1b7e09.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/176417772-d6f982d4-f8a4-4f61-ae0e-24e29556b3c4.png)<br>
+
+
+program:to save grayscale image in d drive<br>
+
+import cv2<br>
+OriginalImg=cv2.imread('img1.jpg')<br>
+GrayImg=cv2.imread('img1.jpg',0)<br>
+isSaved=cv2.imwrite('D:/i.jpg', GrayImg) <br>
+cv2.imshow('Display Original Image',OriginalImg)<br>
+cv2.imshow('Display Grayscale Image', GrayImg)<br>
+cv2.waitKey(0)<br>
+cv2.destroyAllWindows()<br>
+if isSaved:<br>
+ print("The image is successfully saved")<br>
+![image](https://user-images.githubusercontent.com/98145365/178697014-e9071a0a-9159-448a-b740-ff1a25fcb4fa.png)<br>
+
 
 
 
