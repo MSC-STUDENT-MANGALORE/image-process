@@ -423,6 +423,17 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/98145365/178702825-790e6bb1-a705-4f0b-bd48-6bb7013b7642.png)<br>
 
 
+import cv2
+from matplotlib import pyplot as plt
+img = cv2.imread('img1.jpg',0)
+histr = cv2.calcHist([img],[0],None,[256],[0,256])
+plt.plot(histr)
+plt.show()
+
+![image](https://user-images.githubusercontent.com/98145365/178945020-acf06160-5acb-4fa3-b3ad-26104225adf9.png)
+
+
+
 
 
 
