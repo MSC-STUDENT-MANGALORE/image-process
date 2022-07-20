@@ -432,7 +432,13 @@ plt.show()<br>
 
 ![image](https://user-images.githubusercontent.com/98145365/178945020-acf06160-5acb-4fa3-b3ad-26104225adf9.png)<br>
 
-program 23:<br>
+program 23:
+Image Processing Lab Exercise :20/07/2022
+1. Program to perform basic image data analysis using intensity transformation:
+a) Image negative
+b) Log transformation
+c) Gamma correction
+d)<br>
 %matplotlib inline<br>
 import imageio<br>
 import matplotlib.pyplot as plt<br>
