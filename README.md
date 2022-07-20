@@ -450,6 +450,21 @@ plt.imshow(negative); <br>
 plt.axis('off');<br>
 ![image](https://user-images.githubusercontent.com/98145365/179943800-f55240ed-d722-4a2d-8395-0346485351be.png)<br>
 
+%matplotlib inline<br>
+import imageio<br>
+import numpy as np <br>
+import matplotlib.pyplot as plt<br>
+pic=imageio.imread('img2.jpg')
+gray=lambda rgb: np.dot(rgb[...,:3], [0.299,0.587,0.114]) 
+gray=gray(pic)<br>
+max_=np.max(gray)<br>
+def log_transform():<br>
+    return(255/np.log(1+max_))*np.log(1+gray)<br>
+plt.figure(figsize=(5,5))<br>
+plt.imshow(log_transform(), cmap=plt.get_cmap(name='gray'))<br>
+plt.axis('off');<br>
+![image](https://user-images.githubusercontent.com/98145365/179946734-c39bdc89-3d31-4516-aeb3-2037b962f9be.png)<br>
+
 
 
 
