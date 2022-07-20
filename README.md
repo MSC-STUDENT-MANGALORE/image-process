@@ -471,15 +471,30 @@ plt.imshow(log_transform(), cmap=plt.get_cmap(name='gray'))<br>
 plt.axis('off');<br>
 ![image](https://user-images.githubusercontent.com/98145365/179946734-c39bdc89-3d31-4516-aeb3-2037b962f9be.png)<br>
 
-import imageio
-import matplotlib.pyplot as plt
-pic=imageio.imread('img1.jpg')
-gamma=2.2
-gamma_correction=((pic/255)**(1/gamma))
-plt.figure(figsize=(5,5))
-plt.imshow(gamma_correction)
-plt.axis('off');
-![image](https://user-images.githubusercontent.com/98145365/179948829-86cfde62-0b2d-4d0e-baa7-bc1a607bdf2a.png)
+import imageio<br>
+import matplotlib.pyplot as plt<br>
+pic=imageio.imread('img1.jpg')<br>
+gamma=2.2<br>
+gamma_correction=((pic/255)**(1/gamma))<br>
+plt.figure(figsize=(5,5))<br>
+plt.imshow(gamma_correction)<br>
+plt.axis('off');<br>
+![image](https://user-images.githubusercontent.com/98145365/179948829-86cfde62-0b2d-4d0e-baa7-bc1a607bdf2a.png)<br>
+
+program 24:<br>
+from PIL import Image<br>
+from PIL import ImageFilter<br>
+import matplotlib.pyplot as plt<br>
+my_image=Image.open('img2.jpg')<br>
+sharp=my_image.filter(ImageFilter.SHARPEN)<br>
+sharp.save('D:/ip2022.jpg')<br>
+sharp.show()<br>
+plt.imshow(sharp)<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/98145365/179950876-da71dcbd-879a-4505-834d-f8fec2724697.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/179950989-69d2e850-e246-4d92-8bc9-fda1ea38bdd5.png)<br>
+
+
 
 
 
