@@ -465,6 +465,17 @@ plt.imshow(log_transform(), cmap=plt.get_cmap(name='gray'))<br>
 plt.axis('off');<br>
 ![image](https://user-images.githubusercontent.com/98145365/179946734-c39bdc89-3d31-4516-aeb3-2037b962f9be.png)<br>
 
+import imageio
+import matplotlib.pyplot as plt
+pic=imageio.imread('img1.jpg')
+gamma=2.2
+gamma_correction=((pic/255)**(1/gamma))
+plt.figure(figsize=(5,5))
+plt.imshow(gamma_correction)
+plt.axis('off');
+![image](https://user-images.githubusercontent.com/98145365/179948829-86cfde62-0b2d-4d0e-baa7-bc1a607bdf2a.png)
+
+
 
 
 
