@@ -512,12 +512,13 @@ import matplotlib.pyplot as plt<br>
 from PIL import Image<br>
 im = Image.open('img2.jpg')<br>
 width, height=im.size<br>
-im1= im.crop ((280,100,800,600))<br>
+im1= im.crop ((280,100,600,400))<br>
 im1.show()<br>
 plt.imshow(im1)<br>
 plt.show()<br>
-![image](https://user-images.githubusercontent.com/98145365/179952823-b1418979-c82a-44f3-a08d-46056137b04c.png)<br>
-![image](https://user-images.githubusercontent.com/98145365/179952964-5afa999d-2749-4b69-8e9d-49a392739bab.png)<br>
+![image](https://user-images.githubusercontent.com/98145365/179955317-aa0a3ff5-ff3d-4c09-9c54-d41e411dd067.png)<br>
+
+![image](https://user-images.githubusercontent.com/98145365/179955181-599b3748-2b02-45ed-903f-276c4fa93d8b.png)<br>
 
 
 
