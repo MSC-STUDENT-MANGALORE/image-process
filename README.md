@@ -423,14 +423,33 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/98145365/178702825-790e6bb1-a705-4f0b-bd48-6bb7013b7642.png)<br>
 
 
-import cv2
-from matplotlib import pyplot as plt
-img = cv2.imread('img1.jpg',0)
-histr = cv2.calcHist([img],[0],None,[256],[0,256])
-plt.plot(histr)
-plt.show()
+import cv2<br>
+from matplotlib import pyplot as plt<br>
+img = cv2.imread('img1.jpg',0)<br>
+histr = cv2.calcHist([img],[0],None,[256],[0,256])<br>
+plt.plot(histr)<br>
+plt.show()<br>
 
-![image](https://user-images.githubusercontent.com/98145365/178945020-acf06160-5acb-4fa3-b3ad-26104225adf9.png)
+![image](https://user-images.githubusercontent.com/98145365/178945020-acf06160-5acb-4fa3-b3ad-26104225adf9.png)<br>
+
+program 23:<br>
+%matplotlib inline<br>
+import imageio<br>
+import matplotlib.pyplot as plt<br>
+import warnings <br>
+import matplotlib.cbook<br>
+warnings.filterwarnings("ignore", category=matplotlib.cbook.mplDeprecation)<br>
+pic=imageio.imread('img1.jpg')<br>
+plt.figure(figsize=(6,6))<br>
+plt.imshow(pic);<br>
+plt.axis('off');<br>
+![image](https://user-images.githubusercontent.com/98145365/179943733-83045574-a784-479a-80f5-82b43c4e883d.png)<br>
+negative =255- pic<br>
+plt.figure(figsize= (6,6))<br>
+plt.imshow(negative); <br>
+plt.axis('off');<br>
+![image](https://user-images.githubusercontent.com/98145365/179943800-f55240ed-d722-4a2d-8395-0346485351be.png)<br>
+
 
 
 
