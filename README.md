@@ -461,8 +461,8 @@ plt.axis('off');<br>
 import imageio<br>
 import numpy as np <br>
 import matplotlib.pyplot as plt<br>
-pic=imageio.imread('img2.jpg')
-gray=lambda rgb: np.dot(rgb[...,:3], [0.299,0.587,0.114]) 
+pic=imageio.imread('img2.jpg')<br>
+gray=lambda rgb: np.dot(rgb[...,:3], [0.299,0.587,0.114]) <br>
 gray=gray(pic)<br>
 max_=np.max(gray)<br>
 def log_transform():<br>
@@ -520,6 +520,35 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/98145365/179955317-aa0a3ff5-ff3d-4c09-9c54-d41e411dd067.png)<br>
 
 ![image](https://user-images.githubusercontent.com/98145365/179955181-599b3748-2b02-45ed-903f-276c4fa93d8b.png)<br>
+
+MATRIX TO IMAGE<br>
+
+import cv2<br>
+import numpy as np<br>
+img = np.random.randint(222, size=(300, 600,3))<br>
+gen = np.array(img ,dtype=np.uint8)<br>
+cv2.imshow('i',gen)<br>
+cv2.waitKey(0)<br>
+cv2.destroyWindow('i')<br>
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+arr = np.zeros((256,256,3), dtype=np.uint8)
+imgsize = arr.shape[:2]
+innerColor = (255, 255, 255)
+outerColor = (0, 125, 255)
+for y in range(imgsize[1]):
+    for x in range(imgsize[0]):
+        distanceToCenter = np.sqrt((x - imgsize[0]//2) ** 2 + (y - imgsize[1]//2) ** 2)
+        distanceToCenter = distanceToCenter / (np.sqrt(2) * imgsize[0]/2)
+        r = outerColor[0] * distanceToCenter + innerColor[0] * (1 - distanceToCenter)
+        g = outerColor[1] * distanceToCenter + innerColor[1] * (1 - distanceToCenter)
+        b = outerColor[2] * distanceToCenter + innerColor[2] * (1 - distanceToCenter)
+        arr[y, x] = (int(r), int(g), int(b))
+
+plt.imshow(arr, cmap='gray')
+plt.show()
 
 
 
