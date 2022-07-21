@@ -549,6 +549,30 @@ for y in range(imgsize[1]):<br>
 plt.imshow(arr, cmap='gray')<br>
 plt.show()<br>
 ![image](https://user-images.githubusercontent.com/98145365/180191227-7cac8291-322d-4eec-9767-fadc25bffa5e.png)<br>
+from PIL import Image<br>
+import numpy as np<br>
+w, h = 1000, 1000<br>
+data = np.zeros((h, w, 3), dtype=np.uint8)<br>
+data[0:256, 0:256] = [204, 0, 0]<br>
+data[257:512,0:256] = [0, 255, 0]<br>
+data[513:780, 0:256] = [0, 0, 255]<br>
+data[781:1000, 0:256] = [0, 125, 255]<br>
+data[0:256, 257:512] = [255, 212, 0]<br>
+data[0:256, 513:780] = [0, 212, 56]<br>
+data[0:256, 781:1000] = [245, 0, 56]<br>
+data[257:512,257:512] = [24, 5, 255]<br>
+data[257:512,513:780] = [240, 52, 255]<br>
+data[257:512,781:1000] = [40, 252, 255]<br>
+data[513:780,257:512] = [140, 52, 255]<br>
+data[781:1000,257:512] = [240, 152, 255]<br>
+data[781:1000,513:780] = [40, 152, 255]<br>
+data[781:1000,780:1000] = [240, 152, 255]<br>
+data[513:780,513:780] = [200, 52, 55]<br>
+data[513:780,781:1000] = [0, 252, 155]<br>
+img = Image.fromarray(data, 'RGB')<br>
+img.save('my.jpg')<br>
+img.show()<br>
+![image](https://user-images.githubusercontent.com/98145365/180203347-98810b44-bf5f-41ca-ba88-a92a278d8b03.png)<br>
 
 
 
