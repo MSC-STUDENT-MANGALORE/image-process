@@ -531,24 +531,25 @@ cv2.imshow('i',gen)<br>
 cv2.waitKey(0)<br>
 cv2.destroyWindow('i')<br>
 
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np<br>
+import matplotlib.pyplot as plt<br>
+arr = np.zeros((256,256,3), dtype=np.uint8)<br>
+imgsize = arr.shape[:2]<br>
+innerColor = (255, 255, 255)<br>
+outerColor = (0, 125, 255)<br>
+for y in range(imgsize[1]):<br>
+    for x in range(imgsize[0]):<br>
+        distanceToCenter = np.sqrt((x - imgsize[0]//2) ** 2 + (y - imgsize[1]//2) ** 2)<br>
+        distanceToCenter = distanceToCenter / (np.sqrt(2) * imgsize[0]/2)<br>
+        r = outerColor[0] * distanceToCenter + innerColor[0] * (1 - distanceToCenter)<br>
+        g = outerColor[1] * distanceToCenter + innerColor[1] * (1 - distanceToCenter)<br>
+        b = outerColor[2] * distanceToCenter + innerColor[2] * (1 - distanceToCenter)<br>
+        arr[y, x] = (int(r), int(g), int(b))<br>
 
-arr = np.zeros((256,256,3), dtype=np.uint8)
-imgsize = arr.shape[:2]
-innerColor = (255, 255, 255)
-outerColor = (0, 125, 255)
-for y in range(imgsize[1]):
-    for x in range(imgsize[0]):
-        distanceToCenter = np.sqrt((x - imgsize[0]//2) ** 2 + (y - imgsize[1]//2) ** 2)
-        distanceToCenter = distanceToCenter / (np.sqrt(2) * imgsize[0]/2)
-        r = outerColor[0] * distanceToCenter + innerColor[0] * (1 - distanceToCenter)
-        g = outerColor[1] * distanceToCenter + innerColor[1] * (1 - distanceToCenter)
-        b = outerColor[2] * distanceToCenter + innerColor[2] * (1 - distanceToCenter)
-        arr[y, x] = (int(r), int(g), int(b))
+plt.imshow(arr, cmap='gray')<br>
+plt.show()<br>
+![image](https://user-images.githubusercontent.com/98145365/180191227-7cac8291-322d-4eec-9767-fadc25bffa5e.png)<br>
 
-plt.imshow(arr, cmap='gray')
-plt.show()
 
 
 
